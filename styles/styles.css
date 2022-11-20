@@ -1,0 +1,132 @@
+div2{
+    border: 1px solid red;
+}
+
+.main{
+    margin: auto;
+    max-width: 1300px;
+}
+.header{
+        background-color: black;
+        text-align: center;
+        font-size: 3em;
+        position: fixed;
+        top: 0px;
+        width: calc(min(100%, 1300px));
+        color:white;
+}
+.footer{
+        background-color: black;
+        text-align: center;
+        font-size: 2em;
+        position: fixed;
+        bottom: 0px;
+        width: calc(min(100%, 1300px));
+        color:white;
+
+}
+.flexContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.infoContainer{
+    background-color: rgba(139, 195, 230, 0.473);
+    flex: 1;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+.padImg{
+    padding-bottom: 10px;
+}
+
+.noPic{
+    flex: 2;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 1.8em;
+    text-align: justify;
+}
+.titleGrey{
+    font-size: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+    padding-bottom: 20px;
+    
+}
+.titleBlack{
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 25px;
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
+}
+.infoContainer img{
+    width: 100%;
+}
+.txt{
+    padding: 0px 10px 10px 10px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .infoContainer{
+        display: flex;
+        background-color: rgba(139, 195, 230, 0.473);
+        flex: 1;
+        border: 1px solid grey;
+        padding: 5px;
+        font-size: 1.5em;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .noPic{
+        flex: 1.5;
+        border: 1px solid grey;
+        padding: 5px;
+        font-size: 1.8em;
+        width: 100%;
+    }
+    .infoContainer .titleGrey{
+        flex: 100%;
+        order: 1;
+    }
+    .infoContainer .picture{
+        flex: 1;
+        order: 3;
+        
+    }
+    .infoContainer .txt{
+        flex: 1;
+        order: 2;
+        
+    }
+    .order1{
+        order: 1;
+    }
+    .order2{
+        order: 2;
+    }
+    .order3{
+        order: 3;
+    }
+
+}
